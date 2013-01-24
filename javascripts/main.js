@@ -73,7 +73,14 @@
 		$('html body').animate({scrollTop: y_pos}, 500)
 	}
 
-
 	initialize()
 
 })()
+
+function processFeed(data) {
+  var entry = data.responseData.feed.entries[0];
+  var fragment = entry.content.match(/\<p\>([^<]*)<\/p\>/)[1];
+  $('#blog_headline').html(entry.title);
+  $('#blog_content').html($.trim(fragment).replace(/\.$/, '...'));
+}
+
