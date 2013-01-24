@@ -1,546 +1,557 @@
 /*Load external fonts*/
 @font-face {
-    font-family: 'museo_sans_500regular';
-    src: url('../fonts/museosans_500-webfont.eot');
-    src: url('../fonts/museosans_500-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/museosans_500-webfont.woff') format('woff'),
-         url('../fonts/museosans_500-webfont.ttf') format('truetype'),
-         url('../fonts/museosans_500-webfont.svg#museo_sans_500regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'museo_sans_500regular';
+  src: url('../fonts/museosans_500-webfont.eot');
+  src: url('../fonts/museosans_500-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/museosans_500-webfont.woff') format('woff'),
+  url('../fonts/museosans_500-webfont.ttf') format('truetype'),
+  url('../fonts/museosans_500-webfont.svg#museo_sans_500regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'museo_slab_500regular';
-    src: url('../fonts/museo_slab_500-webfont.eot');
-    src: url('../fonts/museo_slab_500-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/museo_slab_500-webfont.woff') format('woff'),
-         url('../fonts/museo_slab_500-webfont.ttf') format('truetype'),
-         url('../fonts/museo_slab_500-webfont.svg#museo_slab_500regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'museo_slab_500regular';
+  src: url('../fonts/museo_slab_500-webfont.eot');
+  src: url('../fonts/museo_slab_500-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/museo_slab_500-webfont.woff') format('woff'),
+  url('../fonts/museo_slab_500-webfont.ttf') format('truetype'),
+  url('../fonts/museo_slab_500-webfont.svg#museo_slab_500regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Museo300Regular';
-    src: url('../fonts/Museo300-Regular-webfont.eot');
-    src: url('../fonts/Museo300-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Museo300-Regular-webfont.woff') format('woff'),
-         url('../fonts/Museo300-Regular-webfont.ttf') format('truetype'),
-         url('../fonts/Museo300-Regular-webfont.svg#Museo300Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Museo300Regular';
+  src: url('../fonts/Museo300-Regular-webfont.eot');
+  src: url('../fonts/Museo300-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Museo300-Regular-webfont.woff') format('woff'),
+  url('../fonts/Museo300-Regular-webfont.ttf') format('truetype'),
+  url('../fonts/Museo300-Regular-webfont.svg#Museo300Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* Base elements */
 .body {
-	background-color: white;
+  background-color: white;
 }
 
 /* Components */
 .container {
-	margin: 0 auto;
-	max-width: 1200px;
-	padding: 0 2%;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
 }
 
 /*Top level links*/
 .section-link {
-	color: #9a9898;
-	display: inline-block;
-	font-family: georgia;
-	font-size: 20px;
-	font-style: italic;
-	text-decoration: none;
-	-webkit-transition: color 0.25s;
-	-moz-transition: color 0.25s;  
-	-o-transition: color 0.25s;
-	transition: color 0.25s;	
+  color: #9a9898;
+  display: inline-block;
+  font-family: georgia;
+  font-size: 20px;
+  font-style: italic;
+  text-decoration: none;
+  -webkit-transition: color 0.25s;
+  -moz-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
 }
 
 .section-link.inverse {
-	color: #00aeef;
+  color: #00aeef;
 }
 
 .section-link.inverse.touch {
-	margin-left: -5%;
-	position: absolute;
-	text-align: center;
+  margin-left: -5%;
+  position: absolute;
+  text-align: center;
 }
 
 .section-link:hover,
 .section-link:active {
-	color: white;
+  color: white;
 }
 
 .section-link.inverse:hover,
 .section-link.inverse:active {
-	color: #9a9898;
+  color: #9a9898;
 }
 
 .section-link .icon-arrow {
-	display: block;
-	margin: 0 auto;
-	padding-top: 5px;
-	-webkit-transition: padding-top 0.25s; 
-	-moz-transition: padding-top 0.25s; 
-	-o-transition: padding-top 0.25s;
-	transition: padding-top 0.25s;
+  display: block;
+  margin: 0 auto;
+  padding-top: 5px;
+  -webkit-transition: padding-top 0.25s;
+  -moz-transition: padding-top 0.25s;
+  -o-transition: padding-top 0.25s;
+  transition: padding-top 0.25s;
 }
 
 .section-link .icon-arrow.over {
-	padding-top: 20px;
+  padding-top: 20px;
 }
 
 .section-link.inverse.horizontal {
-	color: #00aeef;
-	display: block;
-	margin-bottom: 15%;
-	position: relative;
-	text-align: center; 
+  color: #00aeef;
+  display: block;
+  margin-bottom: 15%;
+  position: relative;
+  text-align: center;
 }
 
 .section-link.inverse.horizontal:hover {
-	color: #9A9898;
+  color: #9A9898;
 }
 
 .container-link {
-	margin-top: 9%;
-	position: relative;
-	text-align: center;
+  margin-top: 9%;
+  position: relative;
+  text-align: center;
 }
 
 .icon-arrow-horizontal {
-	position: relative;
-	left: 12px;
-	top: 2px;
-	-webkit-transition: left 0.25s; 
-	-moz-transition: left 0.25s;
-	-o-transition: left 0.25s;
-	transition: left 0.25s;
+  position: relative;
+  left: 12px;
+  top: 2px;
+  -webkit-transition: left 0.25s;
+  -moz-transition: left 0.25s;
+  -o-transition: left 0.25s;
+  transition: left 0.25s;
 }
 
 .icon-arrow-horizontal.over {
-	left: 27px;
+  left: 27px;
 }
 
 .section-header {
-	text-align: center;
+  text-align: center;
 }
 
 .section-header.white {
-	border-top: solid #e5e5e5 thin;
+  border-top: solid #e5e5e5 thin;
 }
 
 /*Typography*/
 .section-heading {
-	background-color: #00aeef;
-	color: white;
-	display: inline-block;
-	font-family: museo_sans_500regular;
-	font-size: 20px;
-	font-weight: normal;
-	margin-bottom: 45px;
-	padding: 14px 33px;
-	text-shadow: 0 -1px 0.5px #9A9898;	
+  background-color: #00aeef;
+  color: white;
+  display: inline-block;
+  font-family: museo_sans_500regular;
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 45px;
+  padding: 14px 33px;
+  text-shadow: 0 -1px 0.5px #9A9898;
 }
 
 .mastheading {
-	font-family: museo_slab_500regular;
-	font-size: 157px;
-	font-style: normal;
-	font-weight: bolder;
-	line-height: 1;	
-	margin-bottom: 19px;
-	margin-top: 120px;
+  font-family: museo_slab_500regular;
+  font-size: 157px;
+  font-style: normal;
+  font-weight: bolder;
+  line-height: 1;
+  margin-bottom: 19px;
+  margin-top: 120px;
 }
 
 .mastsubheading {
-	font-family: Museo300Regular;
-	font-size: 32px;
-	line-height: 1;	
-	margin-bottom: 16px;
+  font-family: Museo300Regular;
+  font-size: 32px;
+  line-height: 1;
+  margin-bottom: 16px;
 }
 
 .article-header {
-	font-family: museo_slab_500regular;
-	font-size: 116px;
-	font-style: lighter;
-	font-weight: 100;
-	letter-spacing: -2px;
-	margin-top: 120px;	
+  font-family: museo_slab_500regular;
+  font-size: 116px;
+  font-style: lighter;
+  font-weight: 100;
+  letter-spacing: -2px;
+  margin-top: 120px;
 }
 
 .article-header.tall {
-	margin-top: 240px;	
+  margin-top: 240px;
 }
-	
+
 .article-subheader {
-	font-family: Museo300Regular;
-	font-size: 42px;
-	line-height: 1;
-	margin-top: 29px;
+  font-family: Museo300Regular;
+  font-size: 42px;
+  line-height: 1;
+  margin-top: 29px;
 }
 
 .article-smallheader {
-	font-family: Museo300Regular;
-	font-size: 42px;
-	line-height: 1;
-	margin-top: 9%;
+  font-family: Museo300Regular;
+  font-size: 42px;
+  line-height: 1;
+  margin-top: 9%;
 }
 
 .paragraph {
-	font-family: museo_sans_500regular;
-	font-size: 14px;
-	line-height: 1.1;
-	margin-bottom: 115px;
-	margin-left: 18%;
-	margin-right: 18%;
+  font-family: museo_sans_500regular;
+  font-size: 14px;
+  line-height: 1.1;
+  margin-bottom: 115px;
+  margin-left: 18%;
+  margin-right: 18%;
 }
 
 .contact-section .paragraph {
-	margin-bottom: 4%;
+  margin-bottom: 4%;
 }
 
 .brat-section .paragraph {
-	margin-bottom: 4%;
+  margin-bottom: 4%;
 }
 
 /*Layouts*/
 .masthead {
-	background: black url(../images/background-black-noise.png) repeat 0 0;
-	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
-	color: white;
-	min-height: 811px;
-	text-align: center;
+  background: black url(../images/background-black-noise.png) repeat 0 0;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+  color: white;
+  min-height: 811px;
+  text-align: center;
 }
 
 .content-section {
-	color: #434242;
-	min-height: 811px;
+  color: #434242;
+  min-height: 811px;
 }
 
 .article {
-	text-align: center;
+  text-align: center;
 }
 
 .contact-section {
-	background-color: white;
-	color: #434242;
-	margin-top: 30%;
-	min-height: 374px;
+  background-color: white;
+  color: #434242;
+  margin-top: 30%;
+  min-height: 374px;
 }
 
 .carousel-section {
-	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
-	height: 644px;
-	margin-bottom: 100px;
-	overflow: hidden;
-	padding-bottom: 50px;
-	position: relative;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+  height: 644px;
+  margin-bottom: 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .carousel-section .section-header {
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 100%;
-	z-index: 2;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 }
 
 .carousel-slide {
-	width: 100%;
-	-webkit-transition: margin-left 0.5s; 
-	-moz-transition: margin-left 0.5s; 
-	-o-transition: margin-left 0.5s; 
-	transition: margin-left 0.5s;
+  width: 100%;
+  -webkit-transition: margin-left 0.5s;
+  -moz-transition: margin-left 0.5s;
+  -o-transition: margin-left 0.5s;
+  transition: margin-left 0.5s;
 }
 
 .carousel-section .carousel-panel {
-	position: relative;
-}
-
-.carousel-section {
-	margin-bottom: 0;
-	padding: 0;
+  position: relative;
 }
 
 .carousel-panel {
-	background: black no-repeat 0 0;
-	float: left;
-	height: 644px;
-	width: 1200px;
+  background: black no-repeat 0 0;
+  float: left;
+  height: 644px;
+  width: 100%;
 }
 
 .carousel-panel.coaching {
-	background-image: url(../images/kat-bree.jpg);
+  background-image: url(../images/kat-bree.jpg);
 }
 
 .carousel-panel.partnering {
-	background-image: url(../images/hands-legos.jpg);
+  background-image: url(../images/hands-legos.jpg);
 }
 
 .carousel-panel.observing {
-	background-image: url(../images/group-photo.jpg);
+  background-image: url(../images/group-photo.jpg);
 }
 .carousel-article {
-	box-sizing: border-box;
-	background: transparent url(../images/background-black-noise-alpha.png) repeat 0 0;
-	bottom: 0;
-	left: 0;
-	padding: 45px 0;
-	position: absolute;
+  box-sizing: border-box;
+  background: transparent url(../images/background-black-noise-alpha.png) repeat 0 0;
+  bottom: 0;
+  left: 0;
+  padding: 45px 0;
+  position: absolute;
 }
 
 .carousel-header,
 .carousel-details {
-	box-sizing: border-box;
-	float: left;
+  box-sizing: border-box;
+  float: left;
 }
 
 .carousel-header {
-	margin-right: 2%;
-	width: 44%;
+  margin-right: 2%;
+  width: 44%;
 }
 
 .carousel-details {
-	margin-right: 10%;
-	width: 44%;
+  margin-right: 10%;
+  width: 44%;
 }
 
 .carousel-heading {
-	color: white;
-	font-family: museo_slab_500regular;
-	font-size: 83px;
-	font-weight: 100;
-	text-align: right;
-}
-
-@media (max-width: 800px) {
-	
-	.carousel-header,
-	.carousel-details {
-		float: none;
-		width: auto;
-		padding-left: 24px;
-	}
-
-	.carousel-heading {
-		text-align: left;
-	}
-
-	.carousel-article {
-		min-height: 310px;
-	}
-}
-
-@media (max-width: 500px) {
-	.carousel-article {
-		min-height: 220px;
-		padding: 10px 0;
-	}
-	.section-link.inverse.touch {
-		margin-left: -9%;
-	}
-}
-
-@media (max-width: 400px) {
-	.carousel-article {
-		min-height: 375px;
-	}
-}
-
-@media (max-width: 350px) {
-	.section-link.inverse {
-		position: absolute;
-		margin-left: 38%;
-	}	
-
-	.section-link.inverse.horizontal {
-		padding-right: 37%;
-	}
-
-	.mastsubheading {
-		padding-left: 1%;
-	}
+  color: white;
+  font-family: museo_slab_500regular;
+  font-size: 83px;
+  font-weight: 100;
+  text-align: right;
 }
 
 .carousel-details-paragraph {
-	color: #7e7d7d;
-	font-family: museo_slab_500regular;
-	font-size: 14px;
+  color: #7e7d7d;
+  font-family: museo_slab_500regular;
+  font-size: 14px;
 }
 
 .carousel-link {
-	font-family: georgia;
-	font-style: italic;
-	font-size: 18px;
-	text-decoration: none;
+  font-family: georgia;
+  font-style: italic;
+  font-size: 18px;
+  text-decoration: none;
 }
 
 .container.carousel-nav {
-	box-sizing: border-box;
-	height: 134px;
-	max-width: none;
-	position: relative;
-	width: 700px;
+  box-sizing: border-box;
+  height: 134px;
+  max-width: 700px;
+  position: relative;
 }
 
 .nav-bar {
-	box-sizing: border-box;
-	display: block;	
-	height: 120px;
-	list-style: none;
-	margin: 20px 0 0;
-	padding: 0;
+  box-sizing: border-box;
+  display: block;
+  height: 120px;
+  list-style: none;
+  margin: 20px 0 0;
+  padding: 0;
 }
 
 .container.carousel-nav li {
-	border-right: 1px dotted #7f7f7f;
-	box-sizing: border-box;
-	float: left;
-	height: 120px;
-	margin: 0;
-	text-align: center;
-	width: 33.33%;
+  border-right: 1px dotted #7f7f7f;
+  box-sizing: border-box;
+  float: left;
+  height: 120px;
+  margin: 0;
+  text-align: center;
+  width: 33.33%;
 }
 
 .container.carousel-nav li:last-child {
-	border-right: none;
+  border-right: none;
 }
 
 .container.carousel-nav li a {
-	color: #656565;
-	font-family: georgia;
-	font-style: italic;
-	font-size: 18px;
-	text-decoration: none;
+  color: #656565;
+  font-family: georgia;
+  font-style: italic;
+  font-size: 18px;
+  text-decoration: none;
 }
 
 .container.carousel-nav li a:hover {
-	color: #7f7f7f;
+  color: #7f7f7f;
 }
 
 .container.carousel-nav .active a:hover,
 .container.carousel-nav .active a {
-	color: #00aeef;
+  color: #00aeef;
 }
 
 .carousel-nav-link .icon {
-	background: transparent url(../images/aha-nav-sprite.png) no-repeat 0 0;
-	display: inline-block;
-	height: 65px;
-	margin-top: 12px;
-	-webkit-transition: background-position 0.15s; 
-	-moz-transition: background-position 0.15s; 
-	-o-transition: background-position 0.15s;
-	transition: background-position 0.15s;
+  background: transparent url(../images/aha-nav-sprite.png) no-repeat 0 0;
+  display: inline-block;
+  height: 65px;
+  margin-top: 12px;
+  -webkit-transition: background-position 0.15s;
+  -moz-transition: background-position 0.15s;
+  -o-transition: background-position 0.15s;
+  transition: background-position 0.15s;
 }
 
 .observe-link .icon {
-	background-position: 0 0;
-	width: 60px;
+  background-position: 0 0;
+  width: 60px;
 }
 
 .observe-link a:hover .icon {
-	background-position: 0 -65px;
+  background-position: 0 -65px;
 }
 
 .observe-link.active a:hover .icon,
 .observe-link.active .icon {
-	background-position: 0 -130px;
-	cursor: default;
+  background-position: 0 -130px;
+  cursor: default;
 }
 
 .coaching-link .icon {
-	background-position: -60px 0;
-	width: 70px;
+  background-position: -60px 0;
+  width: 70px;
 }
 
 .coaching-link a:hover .icon {
-	background-position: -60px -65px;
+  background-position: -60px -65px;
 }
 
 .coaching-link.active a:hover .icon,
 .coaching-link.active .icon {
-	background-position: -60px -130px;
+  background-position: -60px -130px;
 }
 
 .partnering-link .icon {
-	background-position: -130px 0;
-	width: 85px;
+  background-position: -130px 0;
+  width: 85px;
 }
 
 .partnering-link a:hover .icon {
-	background-position: -130px -65px;
+  background-position: -130px -65px;
 }
 
 .partnering-link.active a:hover .icon,
 .partnering-link.active .icon {
-	background-position: -130px -130px;
+  background-position: -130px -130px;
 }
 
 .carousel-nav-link .icon-text {
-	display: block;
-	margin-top: 18px;
-	-webkit-transition: color 0.25s; 
-	-moz-transition: color 0.25s; 
-	-o-transition: color 0.25s;
-	transition: color 0.25s;
+  display: block;
+  margin-top: 18px;
+  -webkit-transition: color 0.25s;
+  -moz-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
 }
 
 .footer {
-	background: black url(../images/background-black-noise.png) repeat 0 0;
-	box-shadow: 0 -2px 10px 0 rgba(0, 0, 0, 0.3);
-	clear: both;
-	color: white;
-	height: 116px;
-	margin-top: 124px;
-	margin: 0;
-	overflow: visible;
-	padding: 0;
-	padding-top: 80px;
-	position: relative;
+  background: black url(../images/background-black-noise.png) repeat 0 0;
+  box-shadow: 0 -2px 10px 0 rgba(0, 0, 0, 0.3);
+  clear: both;
+  color: white;
+  height: 116px;
+  margin-top: 124px;
+  margin: 0;
+  overflow: visible;
+  padding: 0;
+  padding-top: 80px;
+  position: relative;
 }
 
 .social-icons {
-	margin: 0;
-	margin-top: -21px;
+  margin: 0;
+  margin-top: -21px;
 }
 
 .social-icons li {
-	display: inline-block;
+  display: inline-block;
 }
 
 .social-icons li + li {
-	margin-left: 8px;
+  margin-left: 8px;
 }
 
 .social-icons a {
-	background: transparent url(../images/social-sprite.png) no-repeat 0 0;
-	display: block;
-	height: 32px;
+  background: transparent url(../images/social-sprite.png) no-repeat 0 0;
+  display: block;
+  height: 32px;
 }
 
 .twitter a {
-	background-position: 0 0;
-	width: 31px;
+  background-position: 0 0;
+  width: 31px;
 }
 
 .linkedin-bree a,
 .linkedin-kat a {
-	width: 64px;
+  width: 64px;
 }
 
 .linkedin-bree a {
-	background-position: -31px 0;
+  background-position: -31px 0;
 }
 
 .linkedin-kat a {
-	background-position: -95px 0;
+  background-position: -95px 0;
 }
 .copyright {
-	font-family: museo_sans_500regular;
-	font-size: 14px;
-	padding-left: 40px;
+  font-family: museo_sans_500regular;
+  font-size: 14px;
+  padding-left: 40px;
 }
+
+@media (max-width: 800px) {
+  .carousel-header,
+  .carousel-details {
+    float: none;
+    width: auto;
+    padding-left: 24px;
+  }
+
+  .carousel-heading {
+    text-align: left;
+  }
+
+  .carousel-article {
+    min-height: 310px;
+  }
+
+  .carousel-section {
+    width: 800px;
+  }
+}
+
+@media (max-width: 500px) {
+  .carousel-article {
+    min-height: 220px;
+    padding: 10px 0;
+  }
+  .section-link.inverse.touch {
+    margin-left: -9%;
+  }
+  .carousel-section {
+    width: 500px;
+  }
+}
+
+@media (max-width: 400px) {
+  .carousel-article {
+    min-height: 375px;
+  }
+  .carousel-section {
+    width: 400px;
+  }
+}
+
+@media (max-width: 350px) {
+  .section-link.inverse {
+    position: absolute;
+    margin-left: 38%;
+  }
+
+  .section-link.inverse.horizontal {
+    padding-right: 37%;
+  }
+
+  .mastsubheading {
+    padding-left: 1%;
+  }
+  .carousel-section {
+    width: 320px;
+  }
+}
+
