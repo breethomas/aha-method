@@ -533,16 +533,19 @@
     width: 400px;
   }
   .mastheading {
-    font-size: 128px; 
+    font-size: 120px; 
+  }
+  .mastsubheading {
+    font-size: 30px;
   }
   .article-header {
     font-size: 80px;
   }
   .article-subheader {
-    font-size: 33px;
+    font-size: 30px;
   }
   .article-smallheader {
-    font-size: 33px;
+    font-size: 30px;
   }
   .section-link.inverse.touch {
     margin-left: -15%;
