@@ -431,7 +431,7 @@
 
 .carousel-nav-link .icon-text {
   display: block;
-  margin-top: 18px;
+  margin-top: 5%;
   -webkit-transition: color 0.25s;
   -moz-transition: color 0.25s;
   -o-transition: color 0.25s;
@@ -501,15 +501,12 @@
     width: auto;
     padding-left: 24px;
   }
-
   .carousel-heading {
     text-align: left;
   }
-
   .carousel-article {
     min-height: 310px;
   }
-
   .carousel-section {
     width: 800px;
   }
@@ -535,6 +532,24 @@
   .carousel-section {
     width: 400px;
   }
+  .mastheading {
+    font-size: 128px; 
+  }
+  .article-header {
+    font-size: 80px;
+  }
+  .article-subheader {
+    font-size: 33px;
+  }
+  .article-smallheader {
+    font-size: 33px;
+  }
+  .section-link.inverse.touch {
+    margin-left: -15%;
+  }
+  .carousel-heading {
+    font-size: 45px;
+  }
 }
 
 @media (max-width: 350px) {
@@ -542,11 +557,9 @@
     position: absolute;
     margin-left: 38%;
   }
-
   .section-link.inverse.horizontal {
     padding-right: 37%;
   }
-
   .mastsubheading {
     padding-left: 1%;
   }
