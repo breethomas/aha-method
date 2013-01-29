@@ -523,15 +523,6 @@
   .carousel-section {
     width: 500px;
   }
-}
-
-@media (max-width: 400px) {
-  .carousel-article {
-    min-height: 375px;
-  }
-  .carousel-section {
-    width: 400px;
-  }
   .mastheading {
     font-size: 120px; 
   }
@@ -552,6 +543,15 @@
   }
   .carousel-heading {
     font-size: 45px;
+  }
+}
+
+@media (max-width: 400px) {
+  .carousel-article {
+    min-height: 375px;
+  }
+  .carousel-section {
+    width: 400px;
   }
 }
 
