@@ -68,7 +68,7 @@
     var id = button.attr('href')
     var element = $(id)
     var y_pos = element.offset().top
-    $('html body').animate({scrollTop: y_pos}, 500)
+    $('html, body').animate({scrollTop: y_pos}, 500)
   }
 
   initialize()
